@@ -15,7 +15,7 @@ class Solution {
             if(mid == n-1 && nums[mid] != nums[mid-1]) return nums[mid];
             if(mid > 0 && mid < n-1 && nums[mid] != nums[mid+1] && nums[mid] != nums[mid-1]) return nums[mid];
 
-         
+           // Determine which side to search
             if(mid % 2 == 0) { // even index
               if(nums[mid] == nums[mid+1]){
                 start = mid +2;
